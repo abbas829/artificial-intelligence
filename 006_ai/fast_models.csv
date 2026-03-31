@@ -1,0 +1,4 @@
+model_name,dataset,accuracy,training_time_sec,epochs
+ResNet50,CIFAR-10,0.92,1200,50
+VGG16,CIFAR-10,0.89,980,50
+EfficientNet,CIFAR-10,0.94,1450,50

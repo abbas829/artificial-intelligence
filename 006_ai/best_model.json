@@ -1,0 +1,6 @@
+{
+  "model": "EfficientNet",
+  "accuracy": 0.94,
+  "dataset": "CIFAR-10",
+  "rank": 1
+}

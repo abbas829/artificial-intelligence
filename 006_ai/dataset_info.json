@@ -1,0 +1,21 @@
+{
+  "dataset": {
+    "name": "CIFAR-10",
+    "classes": [
+      "airplane",
+      "automobile",
+      "bird",
+      "cat",
+      "deer",
+      "dog",
+      "frog",
+      "horse",
+      "ship",
+      "truck"
+    ],
+    "samples": {
+      "train": 50000,
+      "test": 10000
+    }
+  }
+}

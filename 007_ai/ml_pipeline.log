@@ -1,0 +1,16 @@
+2026-03-24 06:14:48,065 - MLPipeline - INFO - Starting training with data from fake_data.csv
+2026-03-24 06:14:48,068 - MLPipeline - ERROR - Data loading failed: Data file missing: fake_data.csv
+Traceback (most recent call last):
+  File "C:\Users\786\AppData\Local\Temp\ipykernel_10856\3016888968.py", line 23, in robust_training_step
+    raise FileNotFoundError(f'Data file missing: {data_path}')
+FileNotFoundError: Data file missing: fake_data.csv
+2026-03-24 06:14:58,451 - train_model - INFO - Starting model training
+2026-03-24 06:14:58,454 - train_model - ERROR - Training failed: Simulated training failure
+Traceback (most recent call last):
+  File "C:\Users\786\AppData\Local\Temp\ipykernel_10856\3044835607.py", line 17, in train_model
+    raise RuntimeError('Simulated training failure')
+RuntimeError: Simulated training failure
+2026-03-24 06:14:58,458 - train_model - INFO - Starting model training
+2026-03-24 06:14:58,460 - train_model - INFO - Training completed successfully
+2026-03-24 06:14:58,462 - train_model - INFO - Starting model training
+2026-03-24 06:14:58,465 - train_model - INFO - Training completed successfully
