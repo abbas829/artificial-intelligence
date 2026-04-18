@@ -1,0 +1,48 @@
+╔====================================================================╗
+║            CUSTOMER REVIEW PIPELINE - EXECUTION REPORT             ║
+╚====================================================================╝
+
+📊 DATASET OVERVIEW
+--------------------------------------------------
+Total Reviews Processed: 15
+Date Range: 2024-01-15 to 2024-01-29
+Total Features Generated: 19
+
+⭐ RATING ANALYSIS
+--------------------------------------------------
+  Rating 1:   2 ( 13.3%) ██████
+  Rating 2:   2 ( 13.3%) ██████
+  Rating 3:   5 ( 33.3%) ████████████████
+  Rating 4:   1 (  6.7%) ███
+  Rating 5:   5 ( 33.3%) ████████████████
+
+  Average Rating: 3.33
+
+🏷️  CATEGORY BREAKDOWN
+--------------------------------------------------
+  Electronics: 7 (46.7%)
+  Home: 5 (33.3%)
+  Clothing: 3 (20.0%)
+
+📝 TEXT ANALYSIS
+--------------------------------------------------
+  Average Text Length: 35.5 characters
+  Average Word Count: 6.0 words
+  Positive Reviews: 6
+  Negative Reviews: 4
+  Neutral Reviews: 5
+
+💭 SENTIMENT INSIGHTS
+--------------------------------------------------
+  Avg Sentiment Score: 0.40
+  Reviews with Positive Words: 6
+  Reviews with Negative Words: 3
+
+✅ DATA QUALITY
+--------------------------------------------------
+  Missing Values: 1
+  Duplicate Rows: 0
+
+======================================================================
+🎉 PIPELINE EXECUTION COMPLETED SUCCESSFULLY
+======================================================================

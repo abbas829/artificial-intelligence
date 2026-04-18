@@ -1,0 +1,11 @@
+review_id,customer_name,review_text,rating,date,product_category
+1,John Doe,"This product is amazing!!! Love it ❤️ Check out my blog https://example.com",5,2024-01-15,Electronics
+2,Jane Smith,"Terrible quality... broke after 2 days. Contact me at jane@email.com",1,2024-01-16,Electronics
+3,Bob Johnson,"Okay product, nothing special. Price was $49.99",3,2024-01-17,Home
+4,Alice Brown,"LOVE THIS!!! Best purchase ever #happy @store",5,2024-01-18,Electronics
+5,Charlie Wilson,"Not worth the money. Waste of $$$",2,2024-01-19,Home
+6,Diana Prince,"    Great    product    with    extra    spaces    ",4,2024-01-20,Clothing
+7,Eve Davis,"",3,2024-01-21,Electronics
+8,Frank Miller,"Normal review without anything special",3,2024-01-22,Home
+9,Grace Lee,"Amazing!!! Wonderful!!! Fantastic!!!",5,2024-01-23,Clothing
+10,Henry King,"Check out https://spam-site.com/discount for better prices!!!",2,2024-01-24,Electronics

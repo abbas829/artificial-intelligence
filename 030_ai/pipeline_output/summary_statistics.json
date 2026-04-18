@@ -1,0 +1,21 @@
+{
+  "total_reviews": 15,
+  "date_range": {
+    "start": "2024-01-15",
+    "end": "2024-01-29"
+  },
+  "rating_distribution": {
+    "5": 5,
+    "3": 5,
+    "1": 2,
+    "2": 2,
+    "4": 1
+  },
+  "category_distribution": {
+    "Electronics": 7,
+    "Home": 5,
+    "Clothing": 3
+  },
+  "avg_text_length": 35.53333333333333,
+  "avg_sentiment_score": 0.4
+}

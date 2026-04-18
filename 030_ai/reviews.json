@@ -1,0 +1,42 @@
+[
+  {
+    "review_id": 11,
+    "customer_name": "Ivy Chen",
+    "review_text": "Best product ever! 5 stars!!! \ud83c\udf1f",
+    "rating": 5,
+    "date": "2024-01-25",
+    "product_category": "Electronics"
+  },
+  {
+    "review_id": 12,
+    "customer_name": "Jack Brown",
+    "review_text": "Average quality, expected more for $100",
+    "rating": 3,
+    "date": "2024-01-26",
+    "product_category": "Home"
+  },
+  {
+    "review_id": 13,
+    "customer_name": "Kelly White",
+    "review_text": "Contact support@company.com for help. Product is okay.",
+    "rating": 3,
+    "date": "2024-01-27",
+    "product_category": "Clothing"
+  },
+  {
+    "review_id": 14,
+    "customer_name": "Liam Green",
+    "review_text": "Hate it! Complete waste of time and money!!!",
+    "rating": 1,
+    "date": "2024-01-28",
+    "product_category": "Electronics"
+  },
+  {
+    "review_id": 15,
+    "customer_name": "Mia Black",
+    "review_text": "So happy with this purchase!!! #blessed",
+    "rating": 5,
+    "date": "2024-01-29",
+    "product_category": "Home"
+  }
+]

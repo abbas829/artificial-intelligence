@@ -1,0 +1,16 @@
+review_id,customer_name,review_text,rating,date,product_category,review_text_clean,year,month,day_of_week,text_length,word_count,avg_word_length,positive_word_count,negative_word_count,sentiment_score,exclamation_count,question_count,rating_category
+1,John Doe,This product is amazing!!! Love it ❤️ Check out my blog https://example.com,5,2024-01-15,Electronics,this product is amazing! love it check out my blog,2024,1,Monday,50,10,4.1,2,0,2,3.0,0.0,positive
+2,Jane Smith,Terrible quality... broke after 2 days. Contact me at jane@email.com,1,2024-01-16,Electronics,terrible quality. broke after 2 days. contact me at,2024,1,Tuesday,51,9,4.777777777777778,0,2,-2,0.0,0.0,negative
+3,Bob Johnson,"Okay product, nothing special. Price was $49.99",3,2024-01-17,Home,okay product nothing special. price was 49.99,2024,1,Wednesday,45,7,5.571428571428571,0,0,0,0.0,0.0,neutral
+4,Alice Brown,LOVE THIS!!! Best purchase ever #happy @store,5,2024-01-18,Electronics,love this! best purchase ever happy,2024,1,Thursday,35,6,5.0,3,0,3,3.0,0.0,positive
+5,Charlie Wilson,Not worth the money. Waste of $$$,2,2024-01-19,Home,not worth the money. waste of,2024,1,Friday,29,6,4.0,0,1,-1,0.0,0.0,negative
+6,Diana Prince,    Great    product    with    extra    spaces    ,4,2024-01-20,Clothing,great product with extra spaces,2024,1,Saturday,31,5,5.4,1,0,1,0.0,0.0,positive
+7,Eve Davis,,3,2024-01-21,Electronics,[no review provided],2024,1,Sunday,20,3,6.0,0,0,0,0.0,0.0,neutral
+8,Frank Miller,Normal review without anything special,3,2024-01-22,Home,normal review without anything special,2024,1,Monday,38,5,6.8,0,0,0,0.0,0.0,neutral
+9,Grace Lee,Amazing!!! Wonderful!!! Fantastic!!!,5,2024-01-23,Clothing,amazing! wonderful! fantastic!,2024,1,Tuesday,30,3,9.333333333333334,3,0,3,9.0,0.0,positive
+10,Henry King,Check out https://spam-site.com/discount for better prices!!!,2,2024-01-24,Electronics,check out for better prices!,2024,1,Wednesday,28,5,4.8,0,0,0,3.0,0.0,negative
+11,Ivy Chen,Best product ever! 5 stars!!! 🌟,5,2024-01-25,Electronics,best product ever! 5 stars!,2024,1,Thursday,27,5,4.6,1,0,1,4.0,0.0,positive
+12,Jack Brown,"Average quality, expected more for $100",3,2024-01-26,Home,average quality expected more for 100,2024,1,Friday,37,6,5.333333333333333,0,0,0,0.0,0.0,neutral
+13,Kelly White,Contact support@company.com for help. Product is okay.,3,2024-01-27,Clothing,contact for help. product is okay.,2024,1,Saturday,34,6,4.833333333333333,0,0,0,0.0,0.0,neutral
+14,Liam Green,Hate it! Complete waste of time and money!!!,1,2024-01-28,Electronics,hate it! complete waste of time and money!,2024,1,Sunday,42,8,4.375,0,2,-2,4.0,0.0,negative
+15,Mia Black,So happy with this purchase!!! #blessed,5,2024-01-29,Home,so happy with this purchase! blessed,2024,1,Monday,36,6,5.166666666666667,1,0,1,3.0,0.0,positive

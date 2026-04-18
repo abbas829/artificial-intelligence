@@ -1,0 +1,6 @@
+review_id,customer_name,review_text,rating,date,product_category,review_text_clean,year,month,day_of_week,text_length,word_count,avg_word_length,positive_word_count,negative_word_count,sentiment_score,exclamation_count,question_count,rating_category
+10,Henry King,Check out https://spam-site.com/discount for better prices!!!,2,2024-01-24,Electronics,check out for better prices!,2024,1,Wednesday,28,5,4.8,0,0,0,3.0,0.0,negative
+12,Jack Brown,"Average quality, expected more for $100",3,2024-01-26,Home,average quality expected more for 100,2024,1,Friday,37,6,5.333333333333333,0,0,0,0.0,0.0,neutral
+1,John Doe,This product is amazing!!! Love it ❤️ Check out my blog https://example.com,5,2024-01-15,Electronics,this product is amazing! love it check out my blog,2024,1,Monday,50,10,4.1,2,0,2,3.0,0.0,positive
+14,Liam Green,Hate it! Complete waste of time and money!!!,1,2024-01-28,Electronics,hate it! complete waste of time and money!,2024,1,Sunday,42,8,4.375,0,2,-2,4.0,0.0,negative
+6,Diana Prince,    Great    product    with    extra    spaces    ,4,2024-01-20,Clothing,great product with extra spaces,2024,1,Saturday,31,5,5.4,1,0,1,0.0,0.0,positive

@@ -1,0 +1,16 @@
+review_id,customer_name,review_text,rating,date,product_category,review_text_clean,text_length,word_count,year,month,day_of_week,positive_word_count,negative_word_count,sentiment_score,rating_category
+1,John Doe,This product is amazing!!! Love it ❤️ Check out my blog https://example.com,5,2024-01-15,Electronics,this product is amazing! love it check out my blog,50,10,2024,1,Monday,2,0,2,positive
+2,Jane Smith,Terrible quality... broke after 2 days. Contact me at jane@email.com,1,2024-01-16,Electronics,terrible quality. broke after 2 days. contact me at,51,9,2024,1,Tuesday,0,2,-2,negative
+3,Bob Johnson,"Okay product, nothing special. Price was $49.99",3,2024-01-17,Home,okay product nothing special. price was 49.99,45,7,2024,1,Wednesday,0,0,0,neutral
+4,Alice Brown,LOVE THIS!!! Best purchase ever #happy @store,5,2024-01-18,Electronics,love this! best purchase ever happy,35,6,2024,1,Thursday,3,0,3,positive
+5,Charlie Wilson,Not worth the money. Waste of $$$,2,2024-01-19,Home,not worth the money. waste of,29,6,2024,1,Friday,0,1,-1,negative
+6,Diana Prince,    Great    product    with    extra    spaces    ,4,2024-01-20,Clothing,great product with extra spaces,31,5,2024,1,Saturday,1,0,1,positive
+7,Eve Davis,,3,2024-01-21,Electronics,[no review provided],20,3,2024,1,Sunday,0,0,0,neutral
+8,Frank Miller,Normal review without anything special,3,2024-01-22,Home,normal review without anything special,38,5,2024,1,Monday,0,0,0,neutral
+9,Grace Lee,Amazing!!! Wonderful!!! Fantastic!!!,5,2024-01-23,Clothing,amazing! wonderful! fantastic!,30,3,2024,1,Tuesday,3,0,3,positive
+10,Henry King,Check out https://spam-site.com/discount for better prices!!!,2,2024-01-24,Electronics,check out for better prices!,28,5,2024,1,Wednesday,0,0,0,negative
+11,Ivy Chen,Best product ever! 5 stars!!! 🌟,5,2024-01-25,Electronics,best product ever! 5 stars!,27,5,2024,1,Thursday,1,0,1,positive
+12,Jack Brown,"Average quality, expected more for $100",3,2024-01-26,Home,average quality expected more for 100,37,6,2024,1,Friday,0,0,0,neutral
+13,Kelly White,Contact support@company.com for help. Product is okay.,3,2024-01-27,Clothing,contact for help. product is okay.,34,6,2024,1,Saturday,0,0,0,neutral
+14,Liam Green,Hate it! Complete waste of time and money!!!,1,2024-01-28,Electronics,hate it! complete waste of time and money!,42,8,2024,1,Sunday,0,2,-2,negative
+15,Mia Black,So happy with this purchase!!! #blessed,5,2024-01-29,Home,so happy with this purchase! blessed,36,6,2024,1,Monday,1,0,1,positive

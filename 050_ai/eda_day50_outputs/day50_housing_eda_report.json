@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-04-14T20:32:56.440660",
+  "summary": {
+    "rows": 20640,
+    "columns": 11,
+    "missing_columns": 3,
+    "high_correlations": 2,
+    "top_feature": "MedInc"
+  },
+  "insights": {
+    "initial": {
+      "shape": [
+        20640,
+        11
+      ],
+      "columns": [
+        "MedInc",
+        "HouseAge",
+        "AveRooms",
+        "AveBedrms",
+        "Population",
+        "AveOccup",
+        "Latitude",
+        "Longitude",
+        "Target",
+        "Location_Type",
+        "Property_Age"
+      ],
+      "dtypes": {}
+    }
+  }
+}

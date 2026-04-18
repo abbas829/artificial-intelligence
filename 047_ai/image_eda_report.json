@@ -1,0 +1,117 @@
+{
+  "summary": {
+    "analysis_date": "2026-04-13T06:22:43.034756",
+    "folder": "sample_images",
+    "total_images": 4,
+    "successful": 4,
+    "failed": 0,
+    "formats": {
+      "JPEG": 3,
+      "PNG": 1
+    },
+    "modes": {
+      "RGB": 2,
+      "L": 1,
+      "RGBA": 1
+    },
+    "avg_resolution": {
+      "width": 730.0,
+      "height": 520.0
+    },
+    "avg_file_size_kb": 9.866455078125,
+    "aspect_ratio_range": {
+      "min": 1.0,
+      "max": 1.7777777777777777
+    }
+  },
+  "images": [
+    {
+      "filename": "grayscale.jpg",
+      "filepath": "sample_images\\synthetic\\grayscale.jpg",
+      "width": 400,
+      "height": 400,
+      "mode": "L",
+      "format": "JPEG",
+      "file_size_kb": 2.1533203125,
+      "aspect_ratio": 1.0,
+      "megapixels": 0.16,
+      "mean_r": 128.0,
+      "mean_g": 128.0,
+      "mean_b": 128.0,
+      "mean_rgb": 128.0,
+      "std_r": 0.0,
+      "std_g": 0.0,
+      "std_b": 0.0,
+      "mean_std": 0.0,
+      "mean_contrast": 0.0,
+      "blur_variance": 161.80018176,
+      "is_blurry": "False"
+    },
+    {
+      "filename": "high_res.jpg",
+      "filepath": "sample_images\\synthetic\\high_res.jpg",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGB",
+      "format": "JPEG",
+      "file_size_kb": 33.4873046875,
+      "aspect_ratio": 1.7777777777777777,
+      "megapixels": 2.0736,
+      "mean_r": 253.98249758873456,
+      "mean_g": 0.04097222222222222,
+      "mean_b": 0.03885320216049383,
+      "mean_rgb": 84.68744100437242,
+      "std_r": 0.9253262544498515,
+      "std_g": 2.382818008746921,
+      "std_b": 2.2432988938477783,
+      "mean_std": 1.8504810523481836,
+      "mean_contrast": 199.66666666666666,
+      "blur_variance": 27.866336665891815,
+      "is_blurry": "True"
+    },
+    {
+      "filename": "transparent.png",
+      "filepath": "sample_images\\synthetic\\transparent.png",
+      "width": 500,
+      "height": 500,
+      "mode": "RGBA",
+      "format": "PNG",
+      "file_size_kb": 2.658203125,
+      "aspect_ratio": 1.0,
+      "megapixels": 0.25,
+      "mean_r": 72.55158,
+      "mean_g": 0.0,
+      "mean_b": 0.0,
+      "mean_rgb": 24.18386,
+      "std_r": 115.05181936633424,
+      "std_g": 0.0,
+      "std_b": 0.0,
+      "mean_std": 38.35060645544475,
+      "mean_contrast": 85.0,
+      "blur_variance": 170.99519336960003,
+      "is_blurry": "False"
+    },
+    {
+      "filename": "low_res.jpg",
+      "filepath": "sample_images\\synthetic\\low_res.jpg",
+      "width": 100,
+      "height": 100,
+      "mode": "RGB",
+      "format": "JPEG",
+      "file_size_kb": 1.1669921875,
+      "aspect_ratio": 1.0,
+      "megapixels": 0.01,
+      "mean_r": 2.3166,
+      "mean_g": 2.4832,
+      "mean_b": 252.4655,
+      "mean_rgb": 85.75509999999998,
+      "std_r": 18.678997950639644,
+      "std_g": 19.294670708773445,
+      "std_b": 8.339053288593176,
+      "mean_std": 15.437573982668757,
+      "mean_contrast": 215.66666666666666,
+      "blur_variance": 723.2758335600001,
+      "is_blurry": "False"
+    }
+  ]
+}

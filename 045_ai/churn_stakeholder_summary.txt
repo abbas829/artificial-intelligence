@@ -1,0 +1,43 @@
+================================================================================
+EXECUTIVE SUMMARY: Customer Churn Analysis
+================================================================================
+Generated: 2026-04-12 07:42
+
+📊 DATA QUALITY SCORE: 99.6/100
+   • Missing data: 0.36%
+   • Duplicate rows: 0.00%
+
+📋 DATASET OVERVIEW
+   • Total records: 2,000
+   • Total features: 14
+   • Memory usage: 0.3 MB
+
+📈 KEY STATISTICS
+   • customer_id:
+     - Average: 1999.50
+     - Range: [1000.00, 2999.00]
+   • tenure_months:
+     - Average: 36.91
+     - Range: [1.00, 71.00]
+   • monthly_charges:
+     - Average: 72.65
+     - Range: [20.02, 596.70]
+   • total_charges:
+     - Average: 4080.99
+     - Range: [100.47, 7997.62]
+   • age:
+     - Average: 49.61
+     - Range: [18.00, 79.00]
+
+🎯 TARGET VARIABLE ANALYSIS
+   • Target: churn
+     - No: 1,461 (73.0%)
+     - Yes: 539 (27.0%)
+
+💡 RECOMMENDATIONS
+   3. Review automated HTML report for detailed visualizations
+   4. Validate data quality issues with domain experts
+
+================================================================================
+For detailed analysis, see accompanying HTML report.
+================================================================================

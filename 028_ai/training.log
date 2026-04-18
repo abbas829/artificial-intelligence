@@ -1,0 +1,9 @@
+2026-04-07 06:08:30,619 - MLPipeline - INFO - Initialized trainer with config: {'batch_size': 32, 'lr': 0.001}
+2026-04-07 06:08:30,622 - MLPipeline - INFO - Loading data from data/train.csv
+2026-04-07 06:08:30,625 - MLPipeline - INFO - Loaded 1000 samples with shape (1000, 10)
+2026-04-07 06:08:30,628 - MLPipeline - INFO - Starting epoch 0
+2026-04-07 06:08:30,630 - MLPipeline - INFO - Epoch 0 completed. Average loss: 0.5373
+2026-04-07 06:08:30,632 - MLPipeline - INFO - Starting epoch 1
+2026-04-07 06:08:30,635 - MLPipeline - INFO - Epoch 1 completed. Average loss: 0.2989
+2026-04-07 06:08:30,637 - MLPipeline - INFO - Starting epoch 2
+2026-04-07 06:08:30,639 - MLPipeline - INFO - Epoch 2 completed. Average loss: 0.2212
