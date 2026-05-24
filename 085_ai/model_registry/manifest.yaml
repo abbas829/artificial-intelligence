@@ -1,0 +1,23 @@
+models:
+  house_price_predictor:
+    versions:
+      1.0.0:
+        created_at: '2026-05-04T06:53:29.302068'
+        metrics:
+          features: 13
+          mae: 30763.55069519873
+          r2: 0.9484170547405124
+          rmse: 37194.47007730873
+          training_samples: 5000
+        path: model_registry\house_price_predictor_v1.0.0
+        status: active
+      1.1.0:
+        created_at: '2026-05-04T06:53:29.344570'
+        metrics:
+          features: 13
+          mae: 30763.55069519873
+          r2: 0.9684170547405124
+          rmse: 35334.74657344329
+          training_samples: 5000
+        path: model_registry\house_price_predictor_v1.1.0
+        status: active

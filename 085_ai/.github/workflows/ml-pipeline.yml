@@ -1,0 +1,137 @@
+name: ML Pipeline CI/CD
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  # ========================================================================
+  # Stage 1: Data Validation & Testing
+  # ========================================================================
+  data-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pytest great_expectations
+      - name: Validate data schema
+        run: python -m pytest tests/test_data_validation.py -v
+      - name: Check data quality
+        run: python scripts/validate_data_quality.py
+  # ========================================================================
+  # Stage 2: Model Training & Evaluation
+  # ========================================================================
+  model-training:
+    needs: data-validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Train model
+        run: python scripts/train_model.py --config configs/training.yaml
+      - name: Evaluate model
+        run: python scripts/evaluate_model.py --model-path models/latest.pkl
+      - name: Upload model artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: trained-model
+          path: models/
+  # ========================================================================
+  # Stage 3: Model Testing & Validation
+  # ========================================================================
+  model-testing:
+    needs: model-training
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download model artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: trained-model
+          path: models/
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run unit tests
+        run: python -m pytest tests/ -v --cov=src --cov-report=xml
+      - name: Model performance tests
+        run: python scripts/test_model_performance.py
+      - name: Bias & fairness tests
+        run: python scripts/test_fairness.py
+      - name: Upload coverage
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./coverage.xml
+  # ========================================================================
+  # Stage 4: Build & Push Docker Image
+  # ========================================================================
+  build-docker:
+    needs: model-testing
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      - name: Login to Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository }}/house-price-api:latest
+            ghcr.io/${{ github.repository }}/house-price-api:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+  # ========================================================================
+  # Stage 5: Staged Deployment
+  # ========================================================================
+  deploy-staging:
+    needs: build-docker
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - name: Deploy to Staging
+        run: |
+          echo "Deploying to staging environment..."
+          # kubectl set image deployment/api api=ghcr.io/...:${{ github.sha }}
+          # kubectl rollout status deployment/api
+      - name: Run smoke tests
+        run: python scripts/smoke_tests.py --env staging
+  deploy-production:
+    needs: deploy-staging
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Deploy to Production (Canary)
+        run: |
+          echo "Deploying canary (10% traffic)..."
+          # kubectl set image deployment/api-canary api=ghcr.io/...:${{ github.sha }}
+      - name: Monitor canary
+        run: |
+          sleep 300  # 5 minute observation
+          python scripts/check_canary_health.py
+      - name: Full rollout
+        run: |
+          echo "Promoting to 100% traffic..."
+          # kubectl set image deployment/api api=ghcr.io/...:${{ github.sha }}

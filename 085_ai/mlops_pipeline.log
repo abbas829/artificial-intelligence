@@ -1,0 +1,28 @@
+2026-05-03 11:25:07,309 | INFO | HousePricePipeline | 🏗️ Pipeline initialized successfully
+2026-05-03 11:25:07,313 | INFO | HousePricePipeline | [3458a48b] 🔄 Starting prediction pipeline
+2026-05-03 11:25:07,320 | INFO | HousePricePipeline | [3458a48b] ✅ Input validated and structured
+2026-05-03 11:25:07,354 | INFO | HousePricePipeline | [3458a48b] ✅ Prediction complete: $691,693.08
+2026-05-03 11:25:07,357 | INFO | HousePricePipeline | [3458a48b] 🎯 Pipeline completed in 0.045s
+2026-05-03 11:25:07,360 | INFO | HousePricePipeline | [14214129] 🔄 Starting prediction pipeline
+2026-05-03 11:25:07,363 | ERROR | HousePricePipeline | [14214129] ❌ Validation failed: ['bedrooms must be between 1 and 20']
+2026-05-03 11:25:13,193 | INFO | HousePricePipeline | 📦 Model registry initialized at ./model_registry
+2026-05-03 11:25:13,220 | INFO | HousePricePipeline | ✅ Registered house_price_predictor v1.0.0
+2026-05-03 11:25:13,279 | INFO | HousePricePipeline | ✅ Registered house_price_predictor v1.1.0
+2026-05-03 11:25:13,284 | INFO | HousePricePipeline | 📂 Loading house_price_predictor v1.0.0
+2026-05-03 11:25:52,987 | INFO | HousePricePipeline | 📊 Model monitor initialized
+2026-05-04 06:53:28,911 | INFO | HousePricePipeline | 🏗️ Pipeline initialized successfully
+2026-05-04 06:53:28,925 | INFO | HousePricePipeline | [4718ae13] 🔄 Starting prediction pipeline
+2026-05-04 06:53:28,931 | INFO | HousePricePipeline | [4718ae13] ✅ Input validated and structured
+2026-05-04 06:53:29,020 | INFO | HousePricePipeline | [4718ae13] ✅ Prediction complete: $691,693.08
+2026-05-04 06:53:29,023 | INFO | HousePricePipeline | [4718ae13] 🎯 Pipeline completed in 0.098s
+2026-05-04 06:53:29,027 | INFO | HousePricePipeline | [ffa7d747] 🔄 Starting prediction pipeline
+2026-05-04 06:53:29,033 | ERROR | HousePricePipeline | [ffa7d747] ❌ Validation failed: ['bedrooms must be between 1 and 20']
+2026-05-04 06:53:29,260 | INFO | HousePricePipeline | 📦 Model registry initialized at ./model_registry
+2026-05-04 06:53:29,316 | INFO | HousePricePipeline | ✅ Registered house_price_predictor v1.0.0
+2026-05-04 06:53:29,356 | INFO | HousePricePipeline | ✅ Registered house_price_predictor v1.1.0
+2026-05-04 06:53:29,370 | INFO | HousePricePipeline | 📂 Loading house_price_predictor v1.0.0
+2026-05-04 06:53:34,163 | INFO | HousePricePipeline | 📊 Model monitor initialized
+2026-05-04 07:10:08,964 | INFO | HousePricePipeline | 🔄 A/B Test Manager initialized
+2026-05-04 07:10:18,421 | INFO | HousePricePipeline | 🔄 Retraining Orchestrator initialized
+2026-05-04 07:18:33,650 | INFO | HousePricePipeline | 🔄 Retraining Orchestrator initialized
+2026-05-04 07:18:33,824 | WARNING | HousePricePipeline | 🚨 Retraining triggered: Retraining required due to: [HIGH] prediction_drift: Prediction mean shifted by 81.54%
